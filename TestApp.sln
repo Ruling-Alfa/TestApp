@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesetApp", "TesetApp\TesetApp.csproj", "{DC9205F1-71BB-41CA-BA6C-286E3110E220}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TesetApp\TestApp.csproj", "{DC9205F1-71BB-41CA-BA6C-286E3110E220}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesetApp.Tests", "TesetApp.Tests\TesetApp.Tests.csproj", "{126B2386-317F-4DEA-9039-4E84AC9C39CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.Tests", "TesetApp.Tests\TestApp.Tests.csproj", "{126B2386-317F-4DEA-9039-4E84AC9C39CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
