@@ -12,25 +12,23 @@ namespace TesetApp.Controllers
     {
         DBConnect context = new DBConnect();
         // GET: api/Values
-        public IEnumerable<Person> Get()
+        public IEnumerable<string> Get()
         {
-            List<Person> data = context.SelectAll();
-
-            return data;
+           
+            return (new List<string>{ "Value1", "value2" , "Value3" });
         }
 
         // GET: api/Values/5
-        public Person Get(int id)
+        public string Get(int id)
         {
-            Person p = context.Select(id);
-
-            return p;
+            
+            return "value";
         }
 
         // POST: api/Values
         public void Post([FromBody]Person p)
         {
-            context.Insert(p);
+            
         }
 
         // PUT: api/Values/5
