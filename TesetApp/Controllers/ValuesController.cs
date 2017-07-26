@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoWindowsApplication;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,21 +10,27 @@ namespace TesetApp.Controllers
 {
     public class ValuesController : ApiController
     {
+        DBConnect context = new DBConnect();
         // GET: api/Values
-        public IEnumerable<string> Get()
+        public IEnumerable<Person> Get()
         {
-            return new string[] { "value1", "value2" };
+            List<Person> data = context.SelectAll();
+
+            return data;
         }
 
         // GET: api/Values/5
-        public string Get(int id)
+        public Person Get(int id)
         {
-            return "value";
+            Person p = context.Select(id);
+
+            return p;
         }
 
         // POST: api/Values
-        public void Post([FromBody]string value)
+        public void Post([FromBody]Person p)
         {
+            context.Insert(p);
         }
 
         // PUT: api/Values/5
